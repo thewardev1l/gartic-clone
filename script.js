@@ -10,7 +10,7 @@ const joinBtn = document.getElementById('join-btn');
 const gameContainer = document.getElementById('game-container');
 
 // CONEXÃO WEBSOCKET (Mudar após deploy no Render)
-const ws = new WebSocket('ws://localhost:8080');
+const ws = new WebSocket('https://gartic-clone-1.onrender.com/');
 
 let drawing = false;
 let myUsername = "";
