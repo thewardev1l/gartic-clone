@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gartic Clone Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>Escolha seu Nickname</h2>
+            <input type="text" id="username-input" placeholder="Seu nome no jogo..." maxlength="15">
+            <button id="join-btn">Entrar no Jogo</button>
+        </div>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <div class="canvas-container">
+            <canvas id="canvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <button id="clear">Limpar Tela</button>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Chute a palavra...">
+                <button id="chat-send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
